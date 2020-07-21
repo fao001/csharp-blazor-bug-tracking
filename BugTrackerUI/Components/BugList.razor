@@ -8,17 +8,15 @@
             <th>Priority</th>
         </tr>
     </thead>
-    <tbody>
-        @foreach(var item in Bugs)
+        @foreach(var bug in Bugs)
         {
             <tr>
-                <td>@item.Id</td>
-                <td>@item.Title</td>
-                <td>@item.Description</td>
-                <td>@item.Priority</td>
+                <td>@bug.Id</td>
+                <td>@bug.Title</td>
+                <td>@bug.Description</td>
+                <td>@bug.Priority</td>
             </tr>
         }
-    </tbody>
 </table>
 @code {
     [Inject]
